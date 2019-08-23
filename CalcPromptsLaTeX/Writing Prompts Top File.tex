@@ -1,0 +1,71 @@
+%book document class with 12 point font
+\documentclass[12pt]{report}
+
+%this is so I can include graphics (jpeg files) as pictures
+\usepackage{graphicx}
+
+%these commands allow us to have a full page of text with (we hope) 1 inch margins all around
+\topmargin -1.5cm        % read Lamport p.163
+\oddsidemargin -0.04cm   % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth 16cm
+\textheight 23cm 
+ 
+%heading style - see \markright below for heading content, even though it says markright it really means right page but the heading is on the left side of the page
+\pagestyle{myheadings}
+
+%Here we go!
+\begin{document}
+
+%heading
+\markright{Writing Exercises for Calculus}
+
+%title page content and command for making it
+\title{Writing Exercises for Calculus}
+\author{M. E. ``Murphy'' Waggoner\\
+Professor of Mathematics\\
+Simpson College\\
+Indianola, Iowa}
+\maketitle
+
+%start a new page for the table of contents.  Put the footnote here for the references for the questions.
+\newpage\tableofcontents\footnote{This list of questions was compiled over time beginning in 1992, and the list includes many questions that I wrote, but some of the questions have come from or been inspired by other authors.  Unfortunately, I did not realize when I began this list over a decade ago that I would be publishing it on the web, and I apologize for any references that are missing.  } 
+
+
+%I'm not sure what this is but I'm going to try this just for fun.
+ 
+\listoffigures
+
+\include{Chapter1Calculus} 
+
+\include{Chapter2Calculus} 
+
+\include{Chapter3Calculus} 
+
+\include{Chapter4Calculus} 
+
+\include{Chapter5Calculus} 
+
+\include{Chapter6Calculus} 
+
+\include{Chapter7Calculus}
+
+%\setcounter{chapter}{7}
+ 
+\include{Chapter8Calculus} 
+
+\include{Chapter9Calculus}
+
+\include{Chapter10Calculus}
+ 
+\include{Chapter11Calculus} 
+
+\include{Chapter12Calculus}
+
+%\include{LookAlikeIntegrals}
+
+\include{WritingExpectations}
+
+\include{CalculusBibliography}
+
+\end{document}

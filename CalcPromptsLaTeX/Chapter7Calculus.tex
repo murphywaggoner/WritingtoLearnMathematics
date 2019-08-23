@@ -1,0 +1,86 @@
+\chapter{Techniques of Integration} 
+\section{Integration tables}
+ 
+\begin{enumerate}
+
+\item  Describe the advantages and disadvantages of using formulas from the integral tables.
+
+\item  Substitution for integration is supposed to be the inverse of the chain rule for differentiation.  Illustrate this by giving side-by-side, annotated examples of a chain rule problem and the associated substitution problem, making connections between the two examples.
+
+\item  In the text there is an example where $$\int {\ln ^4 x\,dx} $$ for $x > 0$ is evaluated using a reduction formula.  Like most integral tables, ours does not include the ``$+ C$''  but we need to remember to use it.  In the book they seem to simply just tack a ``$+ C$''  onto the end but we know that is not how it really works.  Redo the example from the text using a constant of integration every time you apply the reduction formula.  Show how the result you get is the same as the text and explain why they were able to just tack a ``$+ C$''  onto the result at the end.  Do you think it always works that way when we use a reduction formula?
+
+\item  Some integral formulas are called reduction formulas.  Explain what a reduction formula is and find 2 (or more!) in our integral tables.  How do we use these formulas? 
+
+\end{enumerate}\section{Integration by parts}\begin{enumerate}
+
+\item Evaluate $\displaystyle \int x\sqrt{x+1} \ dx$ two ways:  with substitution and with integration by parts.  Observations?
+
+\item  Integration by parts is supposed to be the inverse of the product rule for differentiation.  Illustrate this by giving side-by-side, annotated examples of a product rule problem and the associated integration by parts problem, making connections between the two examples.
+
+\item  Verify that $$\int {xe^{x^2 } dx}  = {\textstyle{1 \over 2}}e^{x^2 }  + c$$ and $$\int {xe^x dx}  = xe^x  - e^x  + c$$ by computing derivatives of the proposed antiderivatives.  Which derivative rules did you use?  Each of the integrands is of the form $f(x)g(x)$.  Identify $f$ and $g$ in each case.  Why does this make it unlikely that we will find a general antiderivative rule for $$\int {f(x)g(x)\,} dx? \ \cite{SM}$$  
+
+\item  Describe the type of integral that you suspect would be easier to evaluate by parts than by other techniques.  Suppose that you have applied integration by parts once and the resulting integral looks like it needs parts again.  What indications are there that doing parts again will be profitable (as opposed to abandoning this technique and starting over again from scratch)?
+
+\item  Integration by parts is often useful if the integrand is a product of functions.  However, integration by parts can also be beneficial when there is no apparent product in the integrand.  Describe 1 (or more!) such integrals and how integration by parts is useful.
+
+\item  Suppose that you are evaluating $$\int {xe^x dx} $$ by integration by parts and you choose $u = x$ and $dv  = e^x d$x.  So $du = 1$.  The question is what to use for $v$.  If we integrate both sides of $dv  = e^x dx$ we get $$v = \int {dv}  = \int {e^x dx}  = e^x  + C.$$  But we don't use the ``$+ C$'' part for $v$ in integration by parts.  Show that in this example the solution is the same when we use integration by parts on $$\int {xe^x dx} $$ using the ``$+ C$'' and not using the ``$+ C$''. 
+
+\end{enumerate}\section{Trigonometric integrals}\begin{enumerate}
+
+\item  You have just come across an integral of the form $$\int {\sin ^n x\cos ^m x\,dx} $$ on the exam.  Outline the methods for evaluating these types of integrals.
+
+\item  You have just come across an integral of the form $$\int {\tan ^n x\sec ^m x\,dx} $$ on the exam.  Outline the methods for evaluating these types of integrals.
+
+\item  What does an integral look like that you might use a trigonometric substitution on?  How do you decide on what substitution to try?
+
+\item  Evaluate  $$\int {{{dx} \over {\sqrt {4 - x^2 } }}} $$ providing details and diagrams to illustrate the solution.  
+
+\item  A friend of yours has the following work on their paper.
+	$$\int {\tan ^2 x\,dx}  = {1 \over 3}\tan ^3 x + C$$
+Explain the error they have made and give advice on how to avoid this error in the future. \end{enumerate}\section{Integration of rational functions}\begin{enumerate}
+
+\item  Generate and justify a general formula for $$\int {{{a\,dx} \over {bx + c}}} .$$
+
+\item  You have just come across an integral on the exam involving rational functions.  Make a list of the techniques you know of for approaching these types of integrals and how you decide whether to use each approach.
+
+\item  What does the method of partial fraction decomposition accomplish?  Provide two annotated examples to illustrate your response.
+
+
+\item  There is a shortcut for finding the constants for linear terms in a partial fractions decomposition.  For example, consider 
+		$${{x - 1} \over {\left( {x + 1} \right)\left( {x - 2} \right)}} = {A \over {x + 1}} + {B \over {x - 2}}.$$
+To compute $A$, take the original fraction on the left, cover up the $x + 1$ in the denominator and replace $x$ with $-1$: $$A = {{ - 1 - 1} \over { - 1 - 2}} = {2 \over 3}.$$  Similarly, to solve for $B$, cover up the $x - 2$ and replace $x$ with 2: $$B = {{2 - 1} \over {2 + 1}} = {1 \over 3}.$$  Explain why this works.  \cite{SM}   For which forms of partial fractions does this shortcut work and for which forms does it not work?
+
+ \end{enumerate}\section{General integration}\begin{enumerate}
+
+
+\item  In this chapter you learned various techniques for evaluating integrals.  Make a list of the techniques you know.  Rate yourself on how well you know these techniques.  Describe your plan of attack for building your integration skills before the exam.
+
+\item  You have just completed a particularly difficult integral and are feeling quite satisfied with the answer.  You decide to check your work by having Maple evaluate the integral.  The answer from Maple is not the same as yours.  Describe ways in which the form of the result of an indefinite integral might vary and yet still be the same mathematically. 
+
+\item Discuss a couple of look-alike integrals, that is, integrals that look very similar but need very different techniques for evaluating.
+
+\end{enumerate}\section{Improper integrals}\begin{enumerate}
+
+\item  Explain and illustrate the 2 types of improper integrals.  Why do we need to treat these integrals differently then your typical definite integral?  Explain how one type is obvious and the other is sneaky.
+
+\item  A friend of yours has the following work on their paper.
+	$$\int_0^2 {{{dx} \over {\left( {x - 1} \right)^2 }}}  = \left. {{{ - 1} \over {x - 1}}} \right|_0^2  = {{ - 1} \over 1} + {1 \over { - 1}} =  - 2$$
+Explain the error they have made and give advice on how to avoid this error in the future.
+
+\item  Consider the region bounded by $$f(x) = {1 \over {x^2 }},$$ $x = 0$, and $y = 1$.  How long is the boundary of this region?  What is the area of this region?  Discuss these results.
+
+\item  Gabriel's Horn:  Consider$$f(x) = {1 \over x}$$ on the interval $[1, \infty)$ and rotate this curve about the x-axis.  Find the area of this surface (you can evaluate the integral using technology or find it evaluated in a text somewhere).  What does this result say about the amount of paint it would take to cover this surface?
+	Now, consider the region bounded by $f(x)$, $x = 0$, and $y = 1$.  Rotate this region about the x-axis.  Find the volume of this solid (you can evaluate this integral using technology or find it evaluated in a text somewhere).  What does this result say about the amount of material it would take to make this solid?
+	Discuss the results of these 2 calculations.  
+
+\item  We know that $$\int_1^\infty  {{{dx} \over {x^p }}} $$ is finite if $p > 1$ and infinite if $0 < p \le 1$.  For what values of $p$ is $$\int_0^1 {{{dx} \over {x^p }}} $$ finite or infinite? Is $$\int_0^\infty  {{{dx} \over {x^p }}} $$ finite for any value of $p$?
+
+\end{enumerate}\section{Hyperbolic trigonometric functions}\begin{enumerate}
+
+\item  Compare and contrast $\sin x$ and $\cos x$ with $\sinh x$ and $\cosh x$.
+
+\item  Compare and contrast the derivatives of the trigonometric functions and the derivatives hyperbolic functions.
+
+\item  Compare and contrast the integrals of the trigonometric functions and the integrals of the hyperbolic functions. 
+
+\end{enumerate} 

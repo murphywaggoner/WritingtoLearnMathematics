@@ -1,0 +1,130 @@
+\chapter{Multiple Integration}   
+\section{General}
+\begin{enumerate}    
+
+\item  Explain how you would evaluate the double integral of a continuous function $f(x, y)$ over the region $R$ enclosed by the triangle with vertices $(0, 1)$, $(2, 0)$, and $(1, 2)$.  \cite{FWG}  
+
+\item  Is it all right to evaluate the integral of a continuous function $f(x, y)$ over a rectangular region and get different answers depending on the order of integration?  \cite{FWG}  
+
+\item  When does the order of integration matter?  When does it not?  If you are using a double integral to find the volume under a surface and over a region in the $xy$-plane, how do you determine the order of integration?  
+
+\item  We can recover a function from its total differential.  For instance, if $$ df = y^2 \cos \left( {xy^2 } \right)dx + 3y^2  + 2xy\cos \left( {xy^2 } \right)dy $$  and $f(0, 0) = 0$, then $$ f\left( {x,y} \right) = y^3  + \sin \left( {xy^2 } \right) .$$  Explain the process for recovering $f$ from $df$.  Also explain why we cannot recover $f$ from $$ {{\partial f} \over {\partial x}} $$  alone.  
+
+\item  Explain and illustrate the meaning of this sentence:  If $0 \le f(x, y) \le g(x, y)$ on $$ \left\{ {(x,y)\left| {a \le x \le b\ \ {\rm{ and }}\ \ c \le y \le d} \right.} \right\} $$  then $$ \int_c^d {\int_a^b {f(x,y)dx} } \,dy \le \int_c^d {\int_a^b {g(x,y)dx} } \,dy .$$  
+
+\item  Explain and illustrate the meaning of this mathematical statement: $$ \int_c^d {\int_a^b {\left[ {f(x,y) + g(x,y)} \right]dx} } \,dy = \int_c^d {\int_a^b {f(x,y)dx} } \,dy + \int_c^d {\int_a^b {g(x,y)dx} } \,dy .$$  
+
+\item  Find ways to extend the following mathematical statement from functions of 1 variable to functions of 2 variables:  $$ \int_a^b {f(x)\,dx}  = \int_a^c {f(x)\,dx}  + \int_c^b {f(x)\,dx}  $$  for $a \le c \le b$.  Describe and illustrate your extensions.  
+
+\item  What does it mean for a function $z = f(x, y)$ to be integrable?  What does it mean for $$ \int\!\!\!\int\limits_R {f(x,y)\,dA}  $$  where $R$ is a region in the $xy$-plane to be evaluated with an iterated definite integrals?  Are these 2 concepts the same?  
+
+\item  Look back at the homework and writing assignments you have done so far and identify concepts that you feel you know the best.  Identify areas that you need to improve on before the exam.  If you could improve on one concept before the exam, what concept would be the most beneficial to you and why? Which are the trickiest?   
+
+\end{enumerate}
+\section{Double Integrals}
+\begin{enumerate}    
+
+\item  What do vertically simple and horizontally simple mean when applied to a region of integration in the $xy$-plane?  What order of integration is preferred for horizontally simple regions? What order of integration is preferred for vertically simple regions?  Give examples of regions that are both vertically and horizontally simple; neither vertically nor horizontally simple; horizontally simple but not vertically simple; and vertically simple but not horizontally simple.    
+
+\item  Explain the hypotheses that must be satisfied by $f$ so that $$ \int_c^d {\left( {\int_a^b {f(x,y){\kern 1pt} \,dx} } \right)\,dy}  = \int_a^b {\left( {\int_c^d {f(x,y){\kern 1pt} \,dy} } \right)\,dx}  .$$  
+
+\item  Explain the difference between integrating over a rectangle in the plane and a region in the plane that is not rectangular.  How does one determine the limits of integration if the region is rectangular?  How does one determine the limits of integration if the region is not rectangular?  When might we want to break the region into 2 pieces and use 2 separate integrals?   
+
+\item  In Calculus II, we calculated integrals like $$ \int {3x^2 dx}  = x^3  + C $$  and were able to state that $$ f(x) = x^3  + C $$  was the antiderivative of $$ f'\left( x \right) = 3x^2  $$  for some value of $C$.  Can we do the same sort of thing with multiple integrals?  First, consider the indefinite iterated integral $$ \int {\left( {\int {3x^2 dx} } \right)\,dy}  .$$  How would we evaluate this?  Would the result be the same as the iterated integral $$ \int {\left( {\int {3x^2 dy} } \right)\,dx}  ?$$  Is the result of either indefinite integral the antiderivative of some function?  If so, what antiderivative and what function?  Does it make sense to calculate indefinite iterated integrals?  
+
+\item  Suppose a function of 2 variables can be written as a product of functions of 1 variable, such as $$ f(x,y) = F(x)G(y) .$$  Then the integral of $f$ over a rectangular region $R$ can be evaluated as a product as well.  The argument is that
+		$$ \displaylines{   \int\!\!\!\int\limits_R {f(x,y)dA}  = \int_c^d {\left( {\int_a^b {F(x)G(y)\,dx} } \right)\,dy}  \cr     = \int_c^d {\left( {G(y)\int_a^b {F(x)\,dx} } \right)\,dy}  \cr     = \int_c^d {\left( {\int_a^b {F(x)\,dx} } \right)\,G(y)\,dy}  \cr     = \left( {\int_a^b {F(x)\,dx} } \right)\,\int_c^d {G(y)\,dy} . \cr}  $$ 
+Give reasons for the steps in the calculation above.  Use this to evaluate $$ \int_1^2 {\int_{ - 1}^1 {{x \over {y^2 }}dx\,dy} }  .\ \ \cite{FWG}$$    
+
+\item  You want to evaluate $$ \int\!\!\!\int\limits_D {y\sin (xy)\sin ^2 (\pi y)} \,dA $$  over the rectangle $$ \left\{ {(x,y)\left| {0 \le x \le \pi ,0 \le y \le {\textstyle{1 \over 2}}} \right.} \right\} .$$  Which order of integration is easier?  
+
+\item  Sketch the region bounded by the planes $z = 4 - y$, the $yz$-plane, the $zx$-plane, the $xy$-plane, and $x$ = 3.  Find the volume of this region without using an integral.  Find the volume of this region with a double integral.  Find the volume of this region with a triple integral.    
+
+\item  Show that the iterated integrals $$ \int_0^1 {\int_0^1 {{{y - x} \over {\left( {x + y} \right)^3 }}dy\,dx} }  $$  and $$ \int_0^1 {\int_0^1 {{{y - x} \over {\left( {x + y} \right)^3 }}dx\,dy} }  $$  have different values.   Why does this not contradict Fubini's theorem?  \cite{SBS}  
+
+\item  Discuss switching the order of integration in a double integral.  When is this easy?  When must it be done with more care?  Why would we want to switch the order of integration?  
+
+\item  Assume that $$ f(x,y) $$  is a polynomial function.
+\begin{enumerate} 
+
+\item  Sketch a region $R$ in the plane such that the integral $$ \int\!\!\!\int\limits_R {f(x,y)\,dx\,dy}  $$  would be easier than $$ \int\!\!\!\int\limits_R {f(x,y)\,dy\,dx}  .$$
+
+
+\item  Sketch a region $R$ in the plane such that the integral $$ \int\!\!\!\int\limits_R {f(x,y)\,dy\,dx}  $$  would be easier than $$ \int\!\!\!\int\limits_R {f(x,y)\,dx\,dy}  .$$  
+
+
+\item  Sketch a region $R$ in the plane such that the integral $$ \int\!\!\!\int\limits_R {f(x,y)\,dA}  $$  would be easy no matter which order or integration you choose.  
+
+
+\item  Sketch a region $R$ in the plane such that the integral $$ \int\!\!\!\int\limits_R {f(x,y)\,dA}  $$  would be difficult no matter which order or integration you choose.  Explain how you would go about evaluating the integral over this region. 
+
+\end{enumerate}  
+
+\item  The following are "trick integrals".  In each case the region $R$ of integration is the unit disk $$ x^2  + y^2  \le 1 $$  in the $xy$-plane, and the evaluation of the double integral by means of iterated single integrals might be tedious.  But you should be able to evaluate the integral mentally either by visualizing the volume represented by the integral or by exploiting symmetry (or both).  Do so.
+
+
+\begin{enumerate} 
+
+\item  $ \int\!\!\!\int_R {\sqrt {1 - x^2  - y^2 } dA}  $  
+
+\item  $ \int\!\!\!\int_R {\left( {10 - x + y} \right)dA}  $ 
+ 
+
+\item  $ \int\!\!\!\int_R {\left( {1 - \sqrt {x^2  + y^2 } } \right)dA}  $  
+
+\item  $ \int\!\!\!\int_R {\sqrt {x^2  + y^2 } dA}  $ 
+ 
+
+\item  $ \int\!\!\!\int_R {\left( {5 - x^2 \sin x + y^3 \cos y} \right)dA}  $   \cite{EP} 
+\end{enumerate}  
+\end{enumerate}
+\section{Triple Integrals}
+\begin{enumerate}   
+
+\item  Give a realistic application of $$ \int\!\!\!\int\!\!\!\int_S   {f(x,y,z)\,dV}  .$$  
+
+\item  The text talks about vertically simple and horizontally simple regions $R$ in the integral $$ \int\!\!\!\int_R {f(x,y)\,dA}  .$$  Extend this concept to regions $S$ in space and integrals $$ \int\!\!\!\int\!\!\!\int_S   {f(x,y,z)\,dV}  .$$    
+
+ \end{enumerate}
+\section{Area and Volume}
+\begin{enumerate}    
+
+\item  Assign units to $x$, $y$ and $z$, $f$, and $g$.  Complete a dimensional analysis of $$ \int\!\!\!\int\limits_R {f(x,y)\,dx\,dy}  $$  and $$ \mathop{\int\!\!\!\int\!\!\!\int}\limits_{\kern-5.5pt S}   {g(x,y,z)} \,dx\,dy\,dz $$  where $R$ is a region in the $xy$-plane and $S$ is a region in $xyz$-space.  Do the units of $x$, $y$, and $z$ need to be the same?  Does it matter if we change the order of integration?  
+
+\item  The formula $$ \int\!\!\!\int_R {\left[ {f\left( {x,y} \right) - g\left( {x,y} \right)} \right]\,dA}  $$  is supposed to give the volume of region that lies between the surfaces $z = f(x, y)$ and $z = g(x, y)$ and "above" the region $R$ in the $xy$-plane.  For this formula to work, do $f$ and $g$ both have to be positive functions?  Explain why this works when $g(x, y) < 0 < f(x, y)$ and when $g(x, y) < f(x, y) < 0$.  
+
+\item  Consider a plane $$ {x \over a} + {y \over b} + {z \over c} = 1 $$  where $a$, $b$, and $c$ are positive.  Find the volume of the region bounded by this line and the coordinate planes.  
+
+\item  Assume $f > 0$, $g > 0$, $I$ is an interval on the $x$-axis and $R$ is a region in the $xy$-plane.  Compare and contrast $$ \int\limits_I {f(x)\,dx}  $$  and $$ \int\!\!\!\int\limits_R {g(x,y)\,dx\,dy}  $$  and what they measure.  
+
+\item  Explain why a double integral can be used to calculate area {\emph{and}} volume?  Compare and contrast these 2 calculations.  
+
+\item  If a single integral calculates area under a curve and a double integral calculates volume under a surface, then what does a triple integral calculate?  
+
+\item  When might we choose a double integral to calculate a volume of a region in space and when might we choose a triple integral instead?  
+
+\item  Consider the calculation$$ \int\!\!\!\int\!\!\!\int_S   {g(x,y,z)\,dV}  $$  where $g(x, y, z) = 1$. What does this integral measure?  Complete a dimensional analysis.  Consider the calculation$$ \int\!\!\!\int\!\!\!\int_S   {f(x,y,z)\,dV}  $$  where $f$ is a density function.  What does this integral measure?  Complete a dimensional analysis.  
+
+\end{enumerate}
+\section{Polar, Cylindrical and Spherical Coordinates}
+\begin{enumerate}    
+
+\item  The text talks about vertically simple and horizontally simple regions $R$ in the integral $$ \int\!\!\!\int_R {f(x,y)\,dA}  .$$  What about integrals of the form $$ \int\!\!\!\int_S {g(r,\theta )\,dA}  ?$$  What would it mean for $S$ to be radially simple?  What would it mean for $S$ to be angularly simple? Give examples of regions that are both angularly and radially simple; neither angularly nor radially simple; radially simple but not angularly simple; and angularly simple but not radially simple.  
+
+\item  Why is it $r\ dr\ d\theta$?  
+
+\item  Describe the process for transforming the double integral $$ \int\!\!\!\int_R {f(x,y)\,dA}  $$  into polar coordinates.  
+
+\item  Compare and contrast polar coordinates and spherical coordinates.  
+
+\item  Compare and contrast polar coordinates and cylindrical coordinates.  
+
+\item  Compare and contrast cylindrical coordinates and spherical coordinates.  
+
+\item  Why would we choose a double integral in polar coordinates instead of rectangular coordinates?  
+
+\item  Compare and contrast finding the volume of the sphere using volumes of revolution from a previous chapter and using a double integral in polar coordinates.  
+
+\item  Describe various shapes that it would be best to calculate the volume of using cylindrical or spherical coordinates rather than rectangular coordinates.  Which shapes would be better in rectangular coordinates?  
+
+ \end{enumerate}   

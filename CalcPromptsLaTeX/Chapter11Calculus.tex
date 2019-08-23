@@ -1,0 +1,170 @@
+\chapter{Partial Derivatives} 
+
+\section{General}\begin{enumerate}
+
+\item  Write up to 5 distinct questions from the material in this chapter that I might ask on an exam about the following information:  $$f(x,y) = x^2  - xy + y^2  - 3.$$
+
+\item  Why is sketching $z = f(x, y)$ on paper problematic?  What sketching alternatives do we have to help us handle the problems involved with sketching $z = f(x, y)$?  What does each of these alternative sketching techniques represent?
+
+\item  In general, what is an independent and dependent variable.  Give a "real" situation where there are 2 (or more!) variables and determine which are dependent and which are independent and why. Discuss the independence and dependence of the variables in the following definitions.
+\begin{enumerate}\item$\left\{ \matrix{  r = r(x,y) \hfill \cr   s = s(x,y) \hfill \cr   t = t(x,y) \hfill \cr}  \right\}$	\item $M = M(a,b)$ \item $z = z(a, b, c)$ \end{enumerate}
+
+\item  Compare and contrast finding the domain of $y = f(x)$ and $z = f(x, y)$.
+
+\item  We have seen structures in the plane and in space that are defined by single equations (in 2 or 3 variables) and by parametric equations.  You should be able to identify the type of object (curve or surface) and its home (the plane or space) by the number of variables, parameters and equations.  You should also know when a set of parametric equations could be written as a single equation (assuming the algebra works out nicely).  Identify each of the following as a curve or surface (or neither) and whether it lives in the plane or in space (or neither).  Determine if (given nice algebra) the parametric equations could be written as a single equation.  Explain the process by which you made your determinations.
+\begin{enumerate}\item $\left\{ \matrix{  a = a(m) \hfill \cr   b = b(m) \hfill \cr}  \right\}$
+\item $M = M(a,b)$ \item $\left\{ \matrix{  r = r(x,y) \hfill \cr   s = s(x,y) \hfill \cr   t = t(x,y) \hfill \cr}  \right\}$
+\item  $z = z(a, b, c)$ \item $\left\{ \matrix{  a = a(u) \hfill \cr   b = b(u) \hfill \cr   c = c(u) \hfill \cr}  \right\}$ \item $R = R(m)$ \end{enumerate}
+
+\item  Comment on this statement:  The graph of the function $f$ of 1 variable is the set of all points in the plane with coordinates of the form $(x, f(x))$.  Extend this statement to functions of 2 variables. Extend this statement to functions of 3 variables.
+
+\item  Look back at the homework and writing assignments you have done so far and identify concepts that you feel you know the best.  Identify areas that you need to improve on before the exam.  If you could improve on one concept before the exam, what concept would be the most beneficial to you and why? Which are the trickiest?
+
+\item  Give a real-life example of each of the following  functions: $y = f(x)$, $z = f(x, y)$, $w = f(x, y, z)$ and  $u = f(x, y, z, w)$.
+
+\item  What ``nice'' properties would we expect of $f(x,y) = P(x, y)$ where $P$ is a polynomial in $x$ and $y$? \end{enumerate}\section{Level Curves, Traces and Level Surfaces}\begin{enumerate}
+
+\item  Compare and contrast level curves and level surfaces.
+
+\item  Give several real life examples of contour maps and how the contours on the map are used.  Explain what function of 2 variables is used in each contour map.
+
+\item  What do these words mean and what do they have in common:  contour maps, isoclines, isotherms, isobars, and equipotentials?
+
+\item  Explain level curves and traces of a surface.  How do these curves help you understand the shape of a surface?
+
+\item  Compare and contrast level curves and contour maps.
+
+\item  Consider $f(x,y) = 2 - x - {\textstyle{1 \over 2}}y$.  What is the graph of this function?  What are its key features?  If you were to graph this curve by hand, what would be the best way to do it?  How does that compare to how Maple (or other software) graphs this?  Which do you prefer, your graph or the machine's graph?
+
+\item  Let $z = f(x, y)$ be a polynomial function.  Explain why every level curve of $f$ is a closed curve.  For what type of function would that not be true?
+
+\item  Explain why a contour plot without labels identifying the values of $z$ could correspond to more than one function.  \cite{SM}
+
+\item  If a contour plot shows a set of concentric circles around a point, explain why you would expect that point to be the location of a local extreme.  \cite{SM}  What additional information do you need to determine the nature of the extreme value? Why might it not be an extreme?
+
+ \end{enumerate}\section{Limits}\begin{enumerate}
+
+\item  What does it mean for a function $z = f(x, y)$ to have a limit $L$ as $(x,  y) \rightarrow (x_0, y_0)$? \cite{FWG}   What must be true for this limit to exist and how does this differ from limits of functions of 1 variable?  How do we determine, analytically, that the limit does not exist?  Why is this difficult?  
+
+\item  What does it mean for a function $f(x, y)$ to be continuous?  What might $f(x, y)$ look like at a point of discontinuity?
+
+\item  Investigate the validity of this statement:  If $f(x, y)$ approaches the same value $L$ as $(x, y)$ approach $(a, b)$ along every straight line through the point $(a, b)$, then it follows that $$\mathop {\lim }\limits_{(x,y) \to (a,b)} f(x,y) = L.$$
+
+\item  Investigate the validity of this statement:  A quotient of 2 functions $f(x, y)$ and $g(x, y)$ is continuous wherever both of these functions are continuous.
+
+\item  I am looking at $$\mathop {\lim }\limits_{(x,y) \to (0.0)} f(x,y)$$ and I have found that 
+$$\mathop {\lim }\limits_{(x,0) \to (0.0)} f(x,y) = A,$$  $$\mathop {\lim }\limits_{(0,y) \to (0.0)} f(x,y) = A,$$ $$\mathop {\lim }\limits_{(x,x) \to (0.0)} f(x,y) = A,$$ and $$\mathop {\lim }\limits_{(x, - x) \to (0.0)} f(x,y) = A.$$  
+Explain what each of these limits represents.  Can I safely assume that $$\mathop {\lim }\limits_{(x,y) \to (0.0)} f(x,y) = A?$$
+
+\item  Recall that a function of one variable $y = f(x)$ is continuous at $x = a$ if  $$\mathop {\lim }\limits_{x \to a} f(x)$$ exists,  $f(a)$ exists, and  $$\mathop {\lim }\limits_{x \to a} f(x) = f(a).$$  We also discussed the ways in which a function might not satisfy each part of the definition.  Extend this definition to functions of 2 variables.  Discuss ways in which functions of 2 variables might not satisfy the definition of continuity. 
+
+\end{enumerate}\section{Slopes, Tangent Planes and Partial Derivatives}\begin{enumerate}
+
+\item  Discuss the various slopes associated with a specific point on a surface.  How are these slopes calculated?  How are these slopes used?
+
+\item  How are the partial derivatives $${{\partial f} \over {\partial x}}$$ and $${{\partial f} \over {\partial y}}$$ defined?  How are they interpreted and calculated?  \cite{FWG}
+
+\item  How does the relationship between first partial derivatives and continuity of functions of 2 variables compare and contrast to the relationship between first derivatives and continuity for function of a single variable?  \cite{FWG}
+
+\item  What does it mean for a function $f(x, y)$ to be differentiable?  What might $f(x, y)$ look like at a point where it was not differentiable?
+
+\item  How can you sometimes decide from examining $f_x$ and $f_y$ that a function $f(x,y)$ is differentiable?  \cite{FWG}
+
+\item  What is the relation between the differentiability of $f(x,y)$ and the continuity of $f(x,y)$ at a point?  \cite{FWG}
+
+\item  What is a directional derivative?  How is it calculated and how it is interpreted?  Why do functions of 1 variable not have separate directional derivatives, while functions of 2 variables do?
+
+\item  What rates do $f_x$ and $f_y$ measure?  What rate does a directional derivative in the direction of ${\bf{u}}$ measure?
+
+\item  At the point (1, 2) the function $f(x,y)$ has a derivative of 2 in the direction toward (2, 2) and a derivative of $-2$ in the direction toward (1,1).  Find $f_x(1, 2)$ and $f_y(1, 2)$.  Find the derivative of $f$ at (1, 2) in the direction toward the point (4, 6).  \cite{FWG}
+
+\item  How do we measure sensitivity to change in a function?  Near the point (1, 2) is $$f(x,y) = x^2  - xy + y^2  - 3$$ more sensitive to changes in x or in changes in $y$?  Illustrate what this means with a diagram of what $f(x,y)$ looks like near (1, 2).
+
+\item  If we are given a total differential for a function of 2 variables we can recover the original function $f(x, y)$.  Find a function $f(x,y)$ such that $$df = \left( {ye^{xy}  + 3x^2 } \right)dx + \left( {xe^{xy}  - \cos y} \right)dy.$$  However, not every expression of the form 
+$P(x, y)dx + Q(x, y)dy$ is a total differential of some function.  Show that there is no function $f(x,y)$ for which $$\left( {3x + 2y} \right)dx + x\,dy$$ is the total differential.
+
+\item  Suppose a bug is sitting at a specific point on a metal plate and the temperature at a point $(x, y)$ on the plate is give by a differentiable function $T(x, y)$.  Let u be the vector that gives the direction the bug should move in order to cool off as fast as possible. Let v be the vector that gives the direction the bug should move in order to warm up as fast as possible.  Explain why ${\bf{u}} = -{\bf{v}}$.  In other words, why can't the angle between u and v be something other than $\pi$?  
+	What if we forget to require $T(x, y)$ to be differentiable?  Now, can we create a function such that the angle between ${\bf{u}}$ and ${\bf{v}}$ be something other than $\pi$?  If so, find such a function.  If not, explain why not.
+
+\item  At one point in the text they claim that the tangent plane to the surface $z = f(x,y)$ at 
+$(a, b, f(a, b)) is z = f_x(a, b)(x - a) + f_y(a, b)(x - b) + f(a, b)$.  At another point they say that the tangent plane to the surface defined by $F(x, y, z) = 0$ at $$\left( {x_0 ,y_0 ,z_0 } \right)$$ is $$\bar \nabla f\left( {x_0 ,y_0 ,z_0 } \right) \cdot \left[ {\left( {x,y,z} \right) - \left( {x_0 ,y_0 ,z_0 } \right)} \right] = 0.$$  Are these the same?
+
+\item  Consider the function $z = f(x, y)$. Explain and illustrate the meaning and application of this mathematical statement:  $$df = f_x \left( {a,b} \right)\,\Delta x + f_y \left( {a,b} \right)\,\Delta y.$$
+
+\item  Compare and contrast the differential $$dy = f'\left( x \right)dx$$ for $f(x)$ to the total differential $$dz = {{\partial g} \over {\partial x}}dx + {{\partial g} \over {\partial y}}dy$$ for $g(x, y)$.  What would the total differential for $h(x, y, z)$ be?
+
+\item  Suppose the temperature at the point $(x, y, z)$ is given by $T(x, y, z)$.  If a raven is flying around and is at point $(a, b, c)$, what direction should the raven fly in so that it can cool off the fastest?  (Ravens are understood to be very intelligent and so may actually understand it when you explain the calculus.)
+
+\item  Suppose the temperature at the point on the tarmac at a local airport is given by the function $$T\left( {x,y} \right) = 35 + {y \over {5 + x^2 }} - {{2x} \over {5e^{ - {y \mathord{\left/ {\vphantom {y 5}} \right. \kern-\nulldelimiterspace} 5}} }}$$ degrees Fahrenheit while $x$ and $y$ are given in kilometers.  If your aircraft takes off from the airport and heads northwest in the direction $3{\bf{i}} + 4{\bf{j}}$, what is the rate of change of the temperature when you begin to take off if you are starting from the point (0, 0)?  What direction should you take off in if you want to head off in the direction of the fastest temperature increase?  Why?
+
+\item  A friend of your has the following work in answer to a question about a directional derivative.
+	$$\displaylines{  D_{\bf{u}} f(1,2, - 1) = 3f_x \left( {1,2, - 1} \right) + 2f_y \left( {1,2, - 1} \right) - 3f_z \left( {1,2, - 1} \right) \cr    = 3\left( 1 \right) + 2\left( { - 4} \right) - 3\left( 0 \right) \cr    =  - 5 \cr} $$
+Explain to your friend that even without reading the original problem, you can tell that the result is wrong.  Help them understand what the problem is and give them some pointers to help them prevent this error in the future.
+
+\item  Investigate the validity of this statement:  Given $$f(x,y) = \left( {x^2  + y^2 } \right)e^{ - xy} ,$$ one can calculate $$f_y $$ by first calculating $$f_x $$ and then interchanging the symbols $x$ and $y$.  If true, what does this say about the graph of $f$?  Create a name for this type of symmetry.  Create a function that does not have this type of symmetry.  Create a function 
+$w = f(x, y, z)$ that has a similar symmetry.
+
+\item  A friend of yours was looking at a function $z = T(x, y)$ which gives the temperature given a location $(x, y)$.  She said that the partial derivative $$f_x (a,b)$$ gives the rate of change of the temperature at the point $(a, b)$ per unit increase in $y$.  Is she right?  If so, explain the idea further.  If not, how would you explain this to her?
+
+\item  Another friend of yours was looking at a function $z = T(x, y)$ which gives the temperature given a location $(x, y)$.  He said that the partial derivative $$f_x (a,b)$$ gives the rate of change of the temperature at the point $(a, b)$ along a plane parallel to the $x$-axis.  Is he right?  If so, explain the idea further.  If not, how would you explain this to him? \end{enumerate}\section{Chain Rule}\begin{enumerate}
+
+\item  Consider the expression $$x^2 y^2  + 2x^2  - 3y = 0$$ where $y$ is a function of $x$.  In Calculus I you learned to use the chain rule to find $${{dy} \over {dx}}.$$  Now we might find $${{\partial f} \over {\partial x}}$$ for$$f(x,y) = x^2 y^2  + 2x^2  - 3y.$$  Compare and contrast the derivatives $${{dy} \over {dx}}$$ and $${{\partial f} \over {\partial x}}.$$
+
+\item  Suppose that $w = f(x, y, z)$, $x = x(s, t)$, $y = y(s, t)$ and $z = z(s, t)$.  Explain how to apply the chain rule to obtain a formula for $${{\partial ^2 w} \over {\partial s\,\partial t}}.$$
+
+\item  Explain the difference between $${{\partial ^2 w} \over {\partial x\,\partial y}}$$ and $$\left( {{{\partial w} \over {\partial x}}} \right)\left( {{{\partial w} \over {\partial y}}} \right).$$
+
+\item  Compare and contrast the chain rule for functions of 1 variable and functions of 2 variables.  Hypothesize about the chain rule for functions of 3 variables.  Four variables.
+
+\item  We covered the derivatives of functions of functions, but what if we looked at functions of functions of functions.  Consider the following situation:  $$w = f\left( {x,y} \right) = 4x^2  - y,$$ $$x = g\left( {s,t} \right) = t\ln s,$$ $$y = h\left( {s,t} \right) = \sqrt {st} ,$$ $$s = m\left( {u,v} \right) = 2u - v,$$ and $$t = n\left( {u,v} \right) = \sin \left( {uv} \right).$$  Find $${{\partial w} \over {\partial x}},$$ $${{\partial w} \over {\partial t}}$$ and $${{\partial w} \over {\partial u}}$$ and discuss the relationship of these three partial derivatives.
+
+\item  Suppose we have an expression $f(x,y) = 0$ and we know y is a function of x but we can not easily find an explicit expression for $y = f(x)$.  Explain how we can use the chain rule to find a simple expression for $${{dy} \over {dx}}$$ in terms of partial derivatives of F.
+
+\item  Describe which graphical properties of the surface $z = f(x,y)$ would cause the linear approximation of $f(x,y)$ at $(a, b)$ to be particularly accurate or inaccurate.  \cite{SM}
+
+\item  Suppose the function $f(x,y)$ represents the altitude at various points on a ski slope.  explain in physical terms why the direction of maximum increase is   opposite the direction of maximum decrease, with the direction of zero change halfway in between.  \cite{SM}
+
+\item  At a certain point on a mountain a surveyor sights due east and measures a 10  drop-off, then sights due north and measures a 6  rise.  Find the direction of steepest ascent and compute the degree rise in that direction.  \cite{SM}
+
+\item  Both of the functions $$\left\{ \matrix{  x = x(t) \hfill \cr   y = y(t) \hfill \cr}  \right\}$$ and $z = f(x,y)$ have 3 variables.  Compare and contrast these 2 functions.
+
+\item  Suppose that $$f_x \left( {a,b} \right) \ne 0.$$  Explain why the tangent plane to $z = f(x,y)$ at $(a, b)$ must be "tilted" so that there is not a local extreme at $(a, b)$.  \cite{SM}
+
+\item  For ``nice'' functions, the mixed partial derivatives $f_{xy} = f_{yx}$ are equal. What has to be true for $f$ to be "nice"?  If you had to calculate the mixed partials of these functions, which order of finding the derivatives will be quicker?  Explain your choices.
+\begin{enumerate} \item $f(x,y) = x \ln xy$ \item $f(x,y) = 3x^2 - \ln x$ \item $f(x,y) = y + {x \over y}$ \cite{FWG}\end{enumerate} 
+
+\item  Suppose that the function $f(x,y)$ is a sum of terms where each term contains $x$ or $y$ but not both.  What is the value of $f_{xy}$ and why?  \cite{SM} \end{enumerate}\section{Extrema and Saddles}\begin{enumerate}
+
+\item  Make a concept map of the maxima of $f(x)$, the minima of $f(x)$, the inflection points of $f(x)$, the maxima of $f(x, y)$, the minima of $f(x, y)$, and saddle points of $f(x, y)$.  Include information about derivatives in the concept map.
+
+\item  Compare and contrast the methods for finding absolute extrema on a closed set for functions of 1 variable and functions of 2 variables.
+
+\item  What is a critical point of a surface?  How is a critical point found?  What can the surface look like at a critical point?
+
+\item  Compare and contrast the methods for finding the location of relative extrema for a function $y = f(x)$ on the $x$-axis and for a function $z = f(x,y)$ on the $xy$-plane.  Can these methods be extended to $w = f(x, y, z)$?
+
+\item  Investigate the validity of this statement:  Suppose the function $f$ is continuous and has partial derivatives everywhere.  If $f(x,y)$ is negative at every point outside of the rectangle $R$, then the function attains positive values within $R$, then its absolute maximum value must occur at a critical point of $R$ where both its partial derivatives vanish.
+
+\item  Consider a continuous function $f(x,y)$ on a region $R$ in the $xy$-plane.  Describe where the absolute extrema may occur for $f$.  Does it make a difference whether the region $R$ is a rectangle or a circle or other shape?
+
+\item  Investigate the validity of this statement:  If $$f_x \left( {a,b} \right) = f_y \left( {a,b} \right) = 0,$$ the $f(a, b)$ is either a local maximum or a local minimum value of the function $f$.
+
+\item  Compare and contrast the process for finding local vs. absolute extrema of $z = f(x,y)$ on the $xy$-plane. 
+
+\item  Compare and contrast the process for finding local vs. absolute extrema of $z = f(x,y)$ restricted to the unit circle in the $xy$-plane. 
+
+\item  Recall that the absolute value function $$f(x) = \left| x \right|$$ is differentiable except at the single point $x = 0$.  Can you define an analogous function of 2 variables - one that has partial derivatives everywhere except at a single point?  \cite{EP}
+
+\item  If $f(x,y)$ has a local minimum at $(a, b)$, explain why the point $(a, b, f(a, b))$ is a local minimum in the intersection of $z = f(x,y)$ with any vertical plane.  \cite{SM}
+
+\item  How do we determine the nature of a critical point when the discriminant is 0?  Determine whether the function has a maximum, a minimum, or neither at the critical point (0, 0) and describe your method.
+$f(x,y) = x ^2y^2 \ \ \ \ \ \ \ f(x,y) = 1 - xy^2$  \cite{FWG} \end{enumerate}\section{Lagrange Multipliers}\begin{enumerate}
+
+\item  Compare and contrast the geometry of the solutions to these 2 problems.
+\begin{enumerate} \item Use Lagrange multipliers to find the minimum of $x + y$ subject to the constraints 
+$xy = 16$, $x > 0$ and $y > 0$.
+\item Use Lagrange multipliers to find the maximum value of $xy$ subject to the constraint $x + y = 16.$  \cite{FWG} \end{enumerate}
+
+\item  When do we use Lagrange multipliers?  How do we interpret the use of Lagrange multipliers?
+
+\item  Explain the geometry of the method of Lagrange multipliers.\end{enumerate}

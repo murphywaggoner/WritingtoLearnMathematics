@@ -1,0 +1,136 @@
+\chapter{Limits and Continuity}  
+
+ \section{General}  \begin{enumerate}  
+
+\item  Why are polynomial functions "nice"? 
+
+\item  Explain what it means to solve something by analytical, numerical, and graphical methods.  What is the value and limitation of each method? 
+
+\item  Look back at the homework and writing assignments you have done so far and identify concepts that you feel you know the best.  Identify areas that you need to improve on before the exam.  If you could improve on one concept before the exam, what concept would be the most beneficial to you and why? Which are the trickiest? 
+
+\item  We have seen that $$\mathop {\lim }\limits_{x \to a} \left[ {f\left( x \right) + g\left( x \right)} \right] = \mathop {\lim }\limits_{x \to a} f\left( x \right) + \mathop {\lim }\limits_{x \to a} g\left( x \right)$$ if the limits of $f$ and $g$ are both finite.  However, we cannot always break operations up across sums so we need to understand which can and which cannot "distribute".  Make a list of operations that you know of and decide which "distribute" across addition and which do not.  Give counterexamples for the ones that do not "distribute". 
+
+\item  Write up to 5 distinct questions from the material in this chapter that I might ask on an exam about the following information:  $$f(x) = {x \over {\left| x \right|}}.$$
+
+\item  Write up to 5 distinct questions from the material in this chapter that I might ask on an exam about the following information:  $$f(x) = {{\left( {x - 1} \right)^2 } \over {x^2  - 1}}.$$
+
+\item  Write up to 5 distinct questions from the material in this chapter that I might ask on an exam about the following information.
+Intermediate Value Theorem 
+
+\end{enumerate}\section{Limits} \begin{enumerate} 
+
+\item  A friend of yours has the following work on their paper.
+$$\mathop {\lim }\limits_{x \to 0} {{\sin 3x} \over {2x}} = \mathop {\lim }\limits_{x \to 0} {{\sin 3\rlap{--} x} \over {2\rlap{--} x}} = {{\sin 3} \over 2} \approx 0.0706$$
+Gently and kindly help your friend understand he has made and explain how to do the problem correctly. 
+
+\item  A friend of yours missed class yesterday and we were talking about how to find the limits of rational functions analytically.  Explain the process to your friend. 
+
+\item  a)  Evaluate the limit $\mathop {\lim }\limits_{x \to 0} {{e^{2x}  - 1} \over {e^x  - 1}}$ and explain each step.  \\
+b) Evaluate the limit $\mathop {\lim }\limits_{x \to 0} {{e^{3x}  - 1} \over {e^x  - 1}}$ and explain each step.  \\
+c)	Generalize. 
+
+\item  Consider the function $$f(x) = {x \over {\left| x \right|}}.$$  Calculate $f(x)$ for $x$ = $-2$, $-1.5$, $-1$, $-0.5$, 0, 0.5, 1, 1.5 and 2.  Does $$\mathop {\lim }\limits_{x \to 0} f(x)$$ exist? Discuss.  
+
+\item  Describe the limitations of finding limits by tables or graphs. 
+
+\item  Does the existence and value of the limit of a function $f(x)$ as $x$ approaches $a$ ever depend on what happens at $x = a$?  \cite{FWG} 
+
+\item  Evaluate $$\mathop {\lim }\limits_{x \to 0} \left[ {x^2  - {{\cos x} \over {1,000,000,000}}} \right]$$ analytically.  Explain why it would be difficult to find this limit with either graphical or numerical methods. \cite{SBS} 
+
+\item  How are one-sided limits related to limits?  How can this relationship sometimes be used to calculate a limit or prove it does not exist?  \cite{FWG} 
+
+\item  If $$\mathop {\lim }\limits_{x \to a} f(x) = \infty $$ does this limit exists?  Is $\infty$ a number?  Some people say that the slope of a vertical line does not exist and some say the slope is $\infty$.  Are these the same thing?  In general, talk about what $\infty$ represents and how we use this symbol. 
+
+\item  Investigate the  validity of this statement:  If $x$ is close to zero, then so is $x^{ - 3} .$ 
+
+\item  Investigate the  validity of this statement:  If $x$ is close to zero, then so is $x^{{1 \mathord{\left/ {\vphantom {1 3}} \right. \kern-\nulldelimiterspace} 3}} .$ 
+
+\item  Investigate the  validity of this statement:  $\mathop {\lim }\limits_{x \to 2} x^3  = 6.$ 
+
+\item  Investigate the  validity of this statement:  $\mathop {\lim }\limits_{x \to 0} {{\sin 2x} \over {3x}} = 1.5.$ 
+
+\item  Is it possible for $$\mathop {\lim }\limits_{x \to a^ -  } f(x),\ \  \mathop {\lim }\limits_{x \to a^ +  } f(x),$$ and $f(a)$ to have three distinct values?  If no, explain why it is impossible.  If so, give an example of such a function $f$.  Write up how you found the function, your observations, etc. 
+
+\item  It is probably clear that caution is important in using technology.  Equally important is redundancy.  This property is sometimes thought to be a negative (i.e., wasteful, unnecessary), but it has a positive role, nonetheless.  By redundancy we mean investigating a problem using graphical, numerical and symbolic tools.  Why is it important to use multiple methods?  Answer this from a practical perspective and a theoretical perspective (if you have learned multiple techniques, do you understand the mathematics better?)  The drawback of caution and redundancy is that they take extra time.  In computing limits, when should you stop and take extra time to make sure an answer is correct, and when is it safe to go on to the next problem?  Should you always look at a graph?  compute function values?  do symbolic work?  \cite{SM}  
+
+\item  Note that $$\mathop {\lim }\limits_{x \to a} f(x)$$ does not depend on the value of $f(a)$, or even if $f(a)$ exists or not.  In principle, functions such as $$f(x) = \left\{ \matrix{x^2 , &  x \ne 2 \cr 13, &  x = 2}  \right.$$ are as "normal" as functions such as $$g(x) = x^2 .$$  With this in mind, explain why it is important that the limit concept is independent of how (or whether) $f(a)$ is defined.  \cite{SM} 
+
+\item  Numerical methods help us understand limits, but if not used carefully they can lead us to incorrect answers.  Consider the function $$f(x) = \sin \textstyle{{1 \over x}}.$$\\
+a)	Calculate approximations of $$x = {\textstyle{{ - 2} \over \pi }},\;{\textstyle{{ - 2} \over {9\pi }}},\;{\textstyle{{ - 2} \over {13\pi }}}\ \ {\rm{ and }}\ \ x = {\textstyle{2 \over {3\pi }}},\;{\textstyle{2 \over {7\pi }}},\;{\textstyle{2 \over {19\pi }}}$$ so you can see that these are lists of values that get closer and closer to 0.  \\
+b)  Construct a table showing the values of $f(x)$ for $$x = {\textstyle{{ - 2} \over \pi }},\;{\textstyle{{ - 2} \over {9\pi }}},\;{\textstyle{{ - 2} \over {13\pi }}}\ \ {\rm{ and }}\ \ x = {\textstyle{2 \over {3\pi }}},\;{\textstyle{2 \over {7\pi }}},\;{\textstyle{2 \over {19\pi }}}.$$  Based on your results, what would you say about $$\mathop {\lim }\limits_{x \to 0} \sin \textstyle{{1 \over x}}?$$ \\
+c)  Calculate approximations of $$x = {\textstyle{{ - 1} \over {2\pi }}},\;{\textstyle{{ - 1} \over {11\pi }}},\;{\textstyle{{ - 1} \over {20\pi }}} \ \ {\rm{ and }}\ \ x = {\textstyle{1 \over {5\pi }}},\;{\textstyle{1 \over {30\pi }}},\;{\textstyle{1 \over {50\pi }}}$$ so you can see that these are lists of values that get closer and closer to 0.  \\
+d)  Construct a table showing the values of $f(x)$ for $$x = {\textstyle{{ - 1} \over {2\pi }}},\;{\textstyle{{ - 1} \over {11\pi }}},\;{\textstyle{{ - 1} \over {20\pi }}}\ \ {\rm{ and }}\ \ x = {\textstyle{1 \over {5\pi }}},\;{\textstyle{1 \over {30\pi }}},\;{\textstyle{1 \over {50\pi }}}.$$  Based on your results, what would you say about $$\mathop {\lim }\limits_{x \to 0} \sin \textstyle{{1 \over x}}?$$\\
+e)	What do the results of both a) and b) say about $$\mathop {\lim }\limits_{x \to 0} \sin \textstyle{{1 \over x}}.  \cite{SBS} $$ 
+
+\item  Using numerical methods to find $$\mathop {\lim }\limits_{x \to 0} {{\sin x} \over x}$$ (be careful how you enter this on the calculator).  Use a table with three values in it:  $x$, $\sin x$, and $${{\sin x} \over x}.$$  Also, draw a graph of $x$ and $\sin x$ close to 0 on the same coordinate system.  Write a paragraph explaining your work and the observations you make from the table and the graphs.  Make a reasonable argument for why the limit of $${{\sin x} \over x}$$ as $x$ approaches 0 is what it is. 
+
+\item  Find $$\mathop {\lim }\limits_{x \to \infty } {1 \over {\sqrt {x + 1} }}\ \ {\rm{and}} \ \ \mathop {\lim }\limits_{x \to  - \infty } {1 \over {\sqrt {x + 1} }}.$$  Explain what is going on in each case. 
+
+\item  Convert $$\mathop {\lim }\limits_{x \to \infty } f(x) = 2$$ to words.  In fact, try to rewrite this statement in as many different ways as you can in an attempt to describe what it means. 
+
+\item  Convert $$\mathop {\lim }\limits_{x \to  - 1} f(x) = \infty $$ to words.  In fact, try to rewrite this statement in as many different ways as you can in an attempt to describe what it means. 
+
+\item  Convert $$\mathop {\lim }\limits_{x \to \infty } f(x) =  - \infty $$ to words.  In fact, try to rewrite this statement in as many different ways as you can in an attempt to describe what it means. 
+
+\item  Consider a polynomial function $P(x)$ of degree $n$.  Explain what to look for in $P(x)$ to determine the value of $$\mathop {\lim }\limits_{x \to \infty } P(x)$$ and $$\mathop {\lim }\limits_{x \to  - \infty } P(x).$$  Using this information (and other facts about polynomial functions), explain why a polynomial function of odd degree must have at least 1 $x$-intercept. 
+
+\end{enumerate}\section{Continuity and the Intermediate Value Theorem} \begin{enumerate} 
+
+\item  Explain what the Intermediate Value Theorem is, how to use it, and how it is useful. 
+
+\item  If functions $f(x)$ and $g(x)$ are continuous for $ 0 \le x \le 1 $, could $ f(x)g(x) $ be discontinuous at a point in $ \left[0, 1\right]$?  Could $ {{f(x)} \over {g(x)}} $ be discontinuous at a point in $ \left[0, 1\right] $?  \cite{FWG} 
+
+\item  In what ways can a function be discontinuous?  Give examples and explain what part of the definition of continuity your examples do not satisfy. 
+
+\item  Is any real number exactly 1 less than its cube?  (Hint:  Write a mathematical statement that asks the same thing as this English statement.  Note that the question does not ask you to find the number, only to show that it exists.)  How does this question relate to the material in Chapter 2. 
+
+\item  Is it true that a continuous function that is never zero on an interval never changes sign on that interval?  \cite{FWG} 
+
+\item  \label{alaska} Last June I visited my sister in Fairbanks, Alaska.  One Saturday, we hiked up Chena Dome starting at 9 am.  At the top, we made camp and stayed the night.  On Sunday, we started at 9 am and started back down the hill.  Prove that at some time of day on Saturday and Sunday we were at exactly the location on the trail up Chena Dome.\\ 
+	$\mbox{}\ \ \ \ \ \ $(Hint:  Draw a sketch of the function of our altitude on Saturday versus time.  On the same graph, draw a sketch of the function of our altitude on Sunday versus time.  A picture is not a proof, but it should help lead you on the right path (pun intended).)\\ 
+	$\mbox{}\ \ \ \ \ \ $Note that we cannot say exactly what time of day this "crossing of paths" happened, but that is not the point.  The issue here is simply that it must have happened.  This is called an existence proof.  It is like knowing that your spouse is having an affair.  You may not know who they are having the affair with or when they met up, but you may have proof that they are having an affair, i.e., the affair exists. 
+
+\item  Must there have been some time in your life when your height ($h$) in inches exactly matched your weight ($w$) in pounds?  For most people your age it has.  Prove that at one time they were exactly the same.   Refer to Problem \ref{alaska} for more information. 
+
+\item  One question that we need to address in Calculus is whether an operation or procedure works when you add, multiply and divide functions.  This question asks you to find some functions to show that continuity does not "survive" addition, multiplication and division. 
+\begin{enumerate} 
+\item Find functions $f$ and $g$   continuous on   $(0, 1)$ such that $f + g$ is not continuous on the same interval.\\
+\item Find functions $f$ and $g$   continuous on   $(0, 1)$ but for which $fg$ is not continuous on the same interval.\\
+\item Find functions $f$ and $g$   continuous on   $(0, 1)$ but for which $f /g$ is not continuous on the same interval.\\ 
+\item Find functions $ f$ and $g$ such that $f$ is not continuous on   (0, 1) but $f + g$ is continuous on the same interval.\\ 
+\item Find functions $f$ and $g$ such that $f$ is not continuous on   $(0, 1)$ but $fg$ is continuous on the same interval.\\ 
+\item Find functions $f$ and $g$ such that $f$ is not continuous on   $(0, 1)$ but $f/g$ is continuous on the same interval.\\ 
+\item To turn in:  write up your examples, your observations, and the methods you used to create your examples. 
+\end{enumerate}
+
+\item  Think about the following "real-life" functions, each of which is a function of the independent variable time:  the height of a falling object, the velocity of an object, the amount of money in a bank account, the cholesterol level of a person, the heart rate of a person, the amount of a certain chemical present in a test tube and a machine's most recent measurement of the cholesterol level of a person.  Which of these are continuous functions?  For each function you identify as discontinuous, what is the real-life meaning of the discontinuities?  \cite{SM} 
+
+\item  What conditions must be satisfied by a function if it is to be continuous at an interior point of its domain?  How does that differ from checking to see if it is continuous at an endpoint of its domain?  \cite{FWG} 
+
+\item  What is the definition of continuity?  Explain each part of the definition.  Give an example of 4 functions:  one that is continuous and one that does not fulfill each of the parts of the definition of continuity. 
+
+\end{enumerate}\section{Asymptotes} \begin{enumerate} 
+
+\item  Consider a vertical asymptote of a function at $x = 2$.  Explain how to use a table of values to help you determine the limits of $f$ from the left and right of $x = 2$ and to describe the behavior of the graph of $f$. 
+
+\item  It is rare to find simple rules in calculus.  Special (i.e., pathological) cases often exist, and we must be careful to be rigorous.  You may have heard the simple rule:  to find the vertical asymptotes of $f(x) = {{g(x)} \over {h(x)}}$  set $h(x)$ equal to 0 and solve for $x$.  Give an example where $h(a) = 0$, but there is not a vertical asymptote at $x = a$.  \cite{SM}  What can be said about the point $x = a$ with respect to the graph of $f(x)$?  Is the converse true, that is, if $x = a$ is a vertical asymptote of $y = f(x)$ is $h(a) = 0$? 
+
+\item  Many students learn that asymptotes are lines that the graph gets closer and closer to without ever reaching.  This is true for many asymptotes, but not all.  Explain why vertical asymptotes are never crossed by the graph.  Explain why horizontal asymptotes may be crossed.  \cite{SM} 
+
+\item  On your computer or calculator, graph $y = {1 \over {x - 2}}.$  What are the horizontal and vertical asymptotes of this curve?  Look at these asymptotes on the curve you graphed on the calculator or computer.  Most computers will draw a vertical line at the vertical asymptote and will show the graph completely flattening out at the horizontal asymptote for large values of $x$.  Is this accurate?  misleading?  Why does the vertical line appear?  Is it a part of the graph?  How can you keep the computer from drawing it?  Is the graph ever completely flat?  Why does it look that way on your computer?  \cite{SM} 
+
+\item First, provide rough sketches of $\displaystyle y={1 \over x}$, $y=e^x$, $y=\ln x$, $y=2^{-x}$ and $\displaystyle y={1\over {x+2}}$.  Using thse graphs, explain how to find the following limts.  Make strong connections between the behavior of the graphand the value of the limits.  Where possible, explain how to evaluate the limit without having to refer to the graph.  These are limits that you should know how to evaluate relatively easily in the future, and using a grph is a useful way to ``remember'' what the limits are.
+\begin{enumerate}
+\item $\displaystyle\mathop {\lim }\limits_{x \to 0^ +  } \ln x$
+\item $\displaystyle\mathop {\lim }\limits_{x \to 0^ +  } {1 \over x}$
+\item $\displaystyle\mathop {\lim }\limits_{x \to \infty  } {e^x}$
+\item $\displaystyle\mathop {\lim }\limits_{x \to -\infty  } {e^x}$
+\item $\displaystyle\mathop {\lim }\limits_{x \to \infty  } {2^{-x}}$
+\item $\displaystyle\mathop {\lim }\limits_{x \to -\infty  } {2^{-x}}$
+\item $\displaystyle\mathop {\lim }\limits_{x \to \infty  } \ln x$
+\item $\displaystyle\mathop {\lim }\limits_{x \to -2^-  } {1\over {x+2}}$
+\end{enumerate}
+
+
+\end{enumerate}  
+

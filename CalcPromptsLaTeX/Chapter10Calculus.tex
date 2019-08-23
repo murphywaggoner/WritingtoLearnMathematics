@@ -1,0 +1,106 @@
+
+
+\chapter{Vector Valued Functions}
+
+These questions are sorted into the categories  1) general, 2) vector functions, 3) curvature, 4) derivatives and tangent lines and 5) area and arc length.
+
+\section{General}\begin{enumerate}
+
+\item Write up to 5 distinct questions from the material in this chapter that I might ask on an exam about the following information.
+$$\left\{ \matrix{  x = \sin t \hfill \cr   y = \cos t \hfill \cr   z = t \hfill \cr}  \right\}$$
+
+\item We have now seen three different ways to represent a curve in the plane:  $y = f(x)$, 
+$r = r(\theta)$, and $$\left\{ \matrix{  x = x(t) \hfill \cr   y = y(t) \hfill \cr}  \right\}.$$  What are the advantages and disadvantages of each representation?  Describe an application you would use each representation for and explain your choices.
+
+\item Look back at the homework and writing assignments you have done so far and identify concepts that you feel you know the best.  Identify areas that you need to improve on before the exam.  If you could improve on one concept before the exam, what concept would be the most beneficial to you and why? Which are the trickiest?
+
+\end{enumerate}\section{Vector Functions and Parametric Curves}\begin{enumerate}
+
+
+
+\item What curve is described by the following equations?  What happens if we tweak $a$, $b$ and $c$?
+$$\left\{ \matrix{  x(t) = a\sin t \hfill \cr   y(t) = b\cos t \hfill \cr   z(t) = ct \hfill \cr}  \right\}$$
+
+\item Compare and contrast the graphs of the following.
+$$\left\{ \matrix{  x\left( t \right) = \cos t \hfill \cr   y(t) = \sin t \hfill \cr}  \right\}\ \rm{for}\ t   \in   [0, 2 ]$$   $$\left\{ \matrix{  x\left( t \right) = \sin t \hfill \cr   y(t) = \cos t \hfill \cr}  \right\}\ \rm{for}\ t  \in [0, 2 ]$$  $$\left\{ \matrix{  x(t) = {{1 - t^2 } \over {1 + t^2 }} \hfill \cr   y(t) = {{2t} \over {1 + t^2 }} \hfill \cr}  \right\}\ \rm{for}\ t    \in  [-20, 20]$$
+
+\item Suppose that ${\bf{r}}(t) = f(t){\bf{i}} + g(t){\bf{j}} + h(t){{\bf{k}}}$, where $$\mathop {\lim }\limits_{x \to 0} f(t) = \mathop {\lim }\limits_{x \to 0} g(t) = 0$$ and $$\mathop {\lim }\limits_{x \to 0} h(t) = \infty .$$  Describe what is happening graphically as $t \rightarrow 0$ and explain why $$\mathop {\lim }\limits_{x \to 0} {{\bf{r}}}(t)$$ does not exist.  \cite{SM}
+
+\item Suppose that ${\bf{r}}(t)$ is a vector-valued function such that ${{\bf{r}}}(0) = a{\bf{i}} + b{\bf{j}} + c{\bf{k}}$ and $${\bf{r'}}(0)$$ exists.  Imagine zooming in on the curve traced out by ${\bf{r}}(t)$ near the point $(a, b, c)$.  Describe what the curve will look like and how it relates to the tangent vector $${\bf{r'}}(0).\ \cite{SM}$$  
+
+\item Suppose that 2 missiles are fired and both missiles are flying in the same plane.  Assume that the path of the 2 missiles are given by the parametric equations $$\left\{ \matrix{  x_1 (t) \hfill \cr   y_1 (t) \hfill \cr}  \right\}$$ (first missile) and $$\left\{ \matrix{  x_2 (t) \hfill \cr   y_2 (t) \hfill \cr}  \right\}$$ (second missile). Explain the difference between the 2 missiles colliding and the paths of the 2 missiles crossing with no collision.  
+	Let the path of the first missile be given by $$\left\{ \matrix{  x_1 (t) = 100t \hfill \cr   y_1 (t) = 80t - 16t^2  \hfill \cr}  \right\}$$ for $0 \le t \le 5$ seconds and the path of the second missile be given by $$\left\{ \matrix{  x_2 (t) = 500 - 200\left( {t - 2} \right) \hfill \cr   y_2 (t) = 80\left( {t - 2} \right) - 16\left( {t - 2} \right)^2  \hfill \cr}  \right\}$$ for 
+$2 \le t \le 7$ seconds (the second missile was shot off 2 seconds later than the other missile.)  Explain how to determine if the paths of the missiles cross and how to determine if the missiles collide.
+
+\item Graph $$\left\{ \matrix{  x(t) = \cos t \hfill \cr   y(t) = \sin t \hfill \cr}  \right\}.$$  What should the graph look like?  The graph probably looks like an ellipse.  How do you fix the display so that the graph looks "right"?
+
+\item You have probably seen the turntables on which luggage rotates at the airport.  Suppose that such a turntable has two long straight parts with semicircles on the end.  We will attempt to model the motion of someone's luggage that has not been retrieved from the turntable.  We focus on the left/right movement of the luggage.  Suppose the straight part is 40 feet long, extending from $x = -20$ to $x = 20$.  Assume that our luggage starts at time $t = 0$ at location $x = -20$, and it takes 60 seconds for the luggage to reach $x= 20$.  Suppose the radius of the circular motion is 5 feet, and it takes the luggage 30 seconds to complete the half-circle.  We model the straight-line motion with a linear function $x(t) = at + b$.  Find constants $a$ and $b$ so that $x(0) = -20$ and $x(60) = 20$.  For the circular motion, we use a cosine (Why is this a good choice?) $x(t) = 20 + d \cos (et + f)$ for constants $d$, $e$ and $f$ to make this work.  Find equations for the position of the luggage along the backstretch and the other semicircle.  What would the motion be from then on?    \cite{SM}
+
+\item Explain how to parameterize the line from $(2, 3)$ to $(-4, 8)$ such that at $t = 0$ you are at the former point and at $t = 1$ you are at the latter point.  Generalize.
+
+\item Compare and contrast the curve defined parametrically by $$\left\{ \matrix{  x = f(t) \hfill \cr   y = g(t) \hfill \cr}  \right\}$$ and the curve traces out by the terminal point of the vector-valued function ${\bf{r}}(t) = f(t)i + g(t){\bf{j}}$.  
+
+\item Compare and contrast the graphs of ${\bf{r}}(t) = (2t - 1){\bf{i}} + (t^2){\bf{j}} + t{\bf{k}}$, 
+$s(t) = (2 \sin t - 1){\bf{i}} + (\sin 2 t){\bf{j}} + (\sin t){\bf{k}}$, and $u(t) = (2e^t - 1){\bf{i}} + (e^{2t}){\bf{j}} + e^{t}{\bf{k}}$. \cite{SM}
+
+\item Compare and contrast the terms continuous, differentiable, continuously differentiable and smooth as they apply to vector functions.  What extensions could be made of these concepts?
+
+\item Write up to 5 distinct questions from the material in this chapter that I might ask on an exam about the following information.
+${\bf{r}}(t) = t{\bf{i}} + 2t{\bf{j}} +3t{\bf{k}}$ over $[0, 2]$
+
+\item Compare and contrast parametric representations of curves in 3-space with vector representations.
+
+\item "Finding a vector function" and "parameterizing a curve" mean the same thing.  Describe how to do this in two different contexts.  First, in the plane parameterize the curve $y = 3x^3 - 2x$.  In general, describe how to parameterize any function $y = f(x)$.  In the second context, find the vector function who graph is the curve of intersection of the cylinder $z = x^2 + y^2$ and the plane $x + 2y - 3z = 1$ for $x > 0$.
+
+\item What is a vector-valued function?  Explain what it means for a vector-valued function to be continuous.
+
+\item Consider any vector-valued function in the plane whose path is a line.  Do the components of the function have to be linear?  Answer by either proving they have to be linear or demonstrating that they do not.  If they do not have to be linear, for what reason might we want the components to not be linear?
+
+\item Practically everything you can do to combine $y = f(x)$ and $y = g(x)$ results in another function of one variable.  This is not true of vector-valued functions in space.  Make a list of operations that can be performed on ${\bf{F}}(t)$ and ${\bf{G}}(t)$, how these operations are performed, and which result in vector-valued functions and which do not (and why not).
+
+\end{enumerate}\section{Curvature}\begin{enumerate}
+
+
+\item Throughout our study of calculus, we have looked at tangent line approximations to curves.  Some tangent lines approximate a curve well over a fairly lengthy interval while some stay close to a curve for only very short intervals.  Explain how you can use curvature to predict whether a curve will be well approximated by its tangent line.  \cite{SM}
+
+\item Explain what it means for a curve to have zero curvature at a point. Explain what it means for a curve to have zero curvature on an interval.  \cite{SM}
+
+\item True or false:  The curvature of the 2-dimensional curve $y = f(x)$ is the same as the curvature of the 3-dimensional curve ${{\bf{r}}}(t) = t{\bf{i}} + f(t){\bf{j}} + c{\bf{k}}$ where $c$ is a constant.  \cite{SM}
+
+\item True or false:  The curvature of the 2-dimensional curve $y = f(x)$ is the same as the curvature of the 3-dimensional curve ${\bf{r}}(t) = t{\bf{i}} + f(t){\bf{j}} + t{\bf{k}}$.  \cite{SM}
+
+\item Discuss the relationship between curvature and concavity for the function $y = f(x)$. \cite{SM}
+
+\item What is curvature?  How do we measure it?  How do we visually compare the curvature at 2 different points on a curve?
+
+\item Give an example of a curve where the largest curvature occurs at an extreme point.  Give an example of a curve where the largest curvature occurs at a point that is not an extreme point.
+
+\item Why are we given so many different formulas for curvature?  Discuss the need or convenience of these formulas.
+
+\end{enumerate}\section{Derivatives and Tangent Lines}\begin{enumerate}
+
+\item Compare and contrast a tangent line to a curve at a point and an osculating circle of radius $${1 \over \kappa }$$ at the same point.
+
+\item The derivative $${\bf{F'}}(t)$$ of a vector-valued function ${\bf{F}}(t)$ is another vector-valued function.  What do the vectors we obtain from ${\bf{F}}(t)$ represent?  What does it mean if $${{\bf{F}}}\left( {t_0 } \right) = {\bf{0}}$$? What do the vectors we obtain from $${\bf{F'}}(t)$$ represent?  What does it mean if $${\bf{F'}}\left( {t_0 } \right) = {\bf{0}}?$$
+
+\item Compare and contrast the notions of speed and velocity of a moving object.  \cite{SBS}
+
+\item Consider the parametric curve ${\bf{F}}(t)$, its derivative $${\bf{F'}}(t),$$ its arc length $s(t)$ as a function of $t$, the derivative of the arc length $$s'(t),$$ the modulus $$\left\| {{{\bf{F}}}(t)} \right\|,$$ and the modulus of the derivative $$\left\| {{\bf{F'}}(t)} \right\|.$$  Make a concept map of these objects and describe what each measures.
+
+\item The speedometer on your car reads a steady 35 mph.  Could you be accelerating?  \cite{FWG} 
+
+\item When tracking the motion of an object such as a comet, it is often convenient to think of the object's position as a function of time.  In two dimensions, the object's position would be given by functions $x(t)$ and $y(t)$.  Relatively simple polynomial functions can interact to produce complicated parametric graphs.  Use a calculator to graph $$x(t) = t^2  - 2$$ and $$y(t) = t^3  - t - 1.$$  Find the point $(x, y)$ and the value of $t$ where the loop begins.  Try to explain in terms of the properties of $x(t)$ and $y(t)$ why it loops.  \cite{SM}
+
+\end{enumerate}\section{Area and Arc Length}\begin{enumerate}
+
+\item Explain how the formula for area under a parametric curve,$$\int\limits_a^b {y(t)x'(t)} dt,$$ is derived.
+
+\item What is the formula for finding the length of a segment of a smooth curve in 2-space?  In 3-space?  Explain, in general terms, the derivation of this formula.
+
+\item What is the formula for finding the length of an arc of $$\left\{ \matrix{  x = x(t) \hfill \cr   y = y(t) \hfill \cr}  \right\}?$$  Explain, in general terms, the derivation of this formula.  What hypotheses about the curve must be checked before you apply the formula?  What would you do if the curve did not satisfy these hypotheses?  How would you extend the formula for finding the length of an arc of $$\left\{ \matrix{  x = x(t) \hfill \cr   y = y(t) \hfill \cr   z = z(t) \hfill \cr}  \right\}?$$
+
+\item Compare and contrast the formulas for finding the length of an arc of $y = f(x)$ and $$\left\{ \matrix{  x = x(t) \hfill \cr   y = y(t) \hfill \cr}  \right\}.$$  Why do we not talk about finding the length of an arc of $z = f(x, y)$?
+
+\end{enumerate}
+
+
